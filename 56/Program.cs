@@ -6,6 +6,7 @@ int[] arr = new int[m];
 for (int i = 0; i < m; i++)
 {
     Console.WriteLine();
+    Console.Write(i + 1 + ". ");
     for (int j = 0; j < n; j++)
     {
         matrix[i, j] = new Random().Next(1, 10);
@@ -13,7 +14,7 @@ for (int i = 0; i < m; i++)
         arr[i] += matrix[i, j];
     }
 }
-
+Console.WriteLine();
 int min = arr[0];
 int ind = 0;
 
@@ -27,4 +28,4 @@ for (int i = 0; i < m; i++)
 }
 
 Console.WriteLine();
-Console.WriteLine(ind);
+Console.WriteLine(ind + 1);
